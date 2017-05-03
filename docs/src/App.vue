@@ -5,23 +5,23 @@
                 <h1>朱华浩(Zhu, Hua-Hao)</h1>
                 <div class="header-info">
                     <div class="header-info-item">
-                        <i class="iconfont icon-stealth"></i>
+                        <i class="iconfont icon-homepage"></i>
                         <span class="personal-info status">正在寻找前端工作</span>
                     </div>
                     <div class="header-info-item">
-                        <i class="iconfont icon-accessory"></i>
+                        <i class="iconfont icon-addressbook"></i>
                         <span class="personal-info gender">男</span>
                     </div>
                     <div class="header-info-item">
-                        <i class="iconfont icon-coordinates"></i>
+                        <i class="iconfont icon-accessory"></i>
                         <span class="personal-info age">28</span>
                     </div>
                     <div class="header-info-item">
-                        <i class="iconfont icon-homepage"></i>
+                        <i class="iconfont icon-coordinates"></i>
                         <span class="personal-info living">上海-浦东新区</span>
                     </div>
                     <div class="header-info-item">
-                        <i class="iconfont icon-addressbook"></i>
+                        <i class="iconfont icon-stealth"></i>
                         <span class="personal-info wk-exp">6年工作经验(1年前端)</span>
                     </div>
                     <div class="header-info-item">
@@ -140,4 +140,5 @@
 <style>
     @import './css/reset.css';
     @import './css/iconfont.css';
+    @import './css/app.scss';
 </style>
