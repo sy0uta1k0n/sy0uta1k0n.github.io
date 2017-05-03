@@ -15,9 +15,36 @@ module.exports = {
                 loader: 'vue-loader',
                 options: {
                     loaders: {
+                        // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
+                        // the "scss" and "sass" values for the lang attribute to the right configs here.
+                        // other preprocessors should work out of the box, no loader config like this necessary.
+                        'scss': 'vue-style-loader!css-loader!sass-loader',
+                        'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
                     }
                     // other vue-loader options go here
                 }
+            },
+            {
+                test: /\.scss$/,
+                use: [{
+                    loader: "style-loader" // creates style nodes from JS strings
+                }, {
+                    loader: "css-loader" // translates CSS into CommonJS
+                }, {
+                    loader: "sass-loader" // compiles Sass to CSS
+                }]
+            },
+            {
+                test: /\.less$/,
+                loader: 'style!css!less'
+            },
+            {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader'
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'url-loader?name=./fonts/[name].[md5:hash:hex:7].[ext]'
             },
             {
                 test: /\.js$/,
@@ -25,26 +52,12 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.css$/,
-                loader: 'style-loader!css-loader'
-            },
-            {
-                test: /\.scss$/,
-                loader: 'sass-loader!sytel-loader!css-loader'
-            },
-            {
-                test: /\.(eot|svg|ttf|woff)$/,
-                loader: 'url-loader',
-                options:{
-                    name: '[name].[ext]?[hash]'
-                }
-            },
-            {
                 test: /\.(png|jpg|gif|svg)$/,
-                loader: 'url-loader',
-                options: {
-                    name: '[name].[ext]?[hash]'
-                }
+                loader: 'url-loader?name=./fonts/[name].[md5:hash:hex:7].[ext]',
+            },
+            {
+                test: /vux.src.*?js$/,
+                loader: 'babel'
             }
         ]
     },
