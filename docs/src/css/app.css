@@ -1,0 +1,58 @@
+#app {
+  max-width: 750px;
+  text-align: left;
+  color: #333333; }
+  #app .display-flex-col {
+    display: flex;
+    flex-direction: column; }
+  #app .display-flex-row {
+    display: flex;
+    flex-direction: row; }
+  #app header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999; }
+  #app .header h1 {
+    font-size: 30px;
+    font-weight: 600; }
+  #app .header .header-info {
+    font-size: 20px;
+    font-weight: 200; }
+  #app .header .header-info-item {
+    margin: 8px 0;
+    height: 20px;
+    line-height: 20px; }
+  #app .body-info {
+    position: absolute;
+    padding-top: 300px; }
+    #app .body-info h2 {
+      font-size: 28px;
+      font-weight: 400; }
+    #app .body-info .education span, #app .body-info .education .education-title {
+      font-size: 22px;
+      font-weight: 200; }
+    #app .body-info .education span {
+      margin: 10px 0; }
+    #app .body-info .technology {
+      margin-top: 10px; }
+      #app .body-info .technology .technology .tec-title {
+        font-size: 26px;
+        font-weight: 400;
+        margin: 40px 0px; }
+      #app .body-info .technology .technology .tec-item {
+        font-size: 20px;
+        font-weight: 200;
+        margin: 10px 0px; }
+    #app .body-info .work-exp {
+      margin-top: 10px; }
+      #app .body-info .work-exp .wkexp-item {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 20px 0px; }
+      #app .body-info .work-exp span.wkexp-item-description {
+        font-weight: 100; }
+    #app .body-info .project-exp .project-exp-item {
+      margin: 20px 0; }
+
+/*# sourceMappingURL=app.css.map */

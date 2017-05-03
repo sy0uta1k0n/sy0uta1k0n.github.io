@@ -1,30 +1,103 @@
 #app{
-  max-width: 1000px;
+  max-width: 750px;
+  text-align: left;
 
-  display: flex;
-  flex-direction: column;
 
-  .header{
+  color: #333333;
+
+  .display-flex-col{
     display: flex;
     flex-direction: column;
+  }
 
+  .display-flex-row{
+    display: flex;
+    flex-direction: row;
+  }
+
+  header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+  }
+
+  .header{
     h1{
-      font-size: 26px;
+      font-size: 30px;
+      font-weight: 600;
     }
 
     .header-info{
-      display: flex;
-      flex-direction: column;
+      font-size: 20px;
+      font-weight: 200;
+    }
 
-      .header-info-item{
-        display: flex;
-        flex-direction: row;
-      }
+    .header-info-item {
+      margin: 8px 0;
+
+      height: 20px;
+      line-height: 20px;
     }
   }
 
   .body-info{
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    padding-top: 300px;
+
+    h2{
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    .education {
+      span, .education-title{
+        font-size: 22px;
+        font-weight: 200;
+      }
+
+      span{
+        margin: 10px 0;
+      }
+    }
+
+    .technology{
+      margin-top: 10px;
+
+      .technology .tec-title{
+        font-size: 26px;
+        font-weight: 400;
+
+        margin: 40px 0px;
+      }
+
+      .technology .tec-item{
+        font-size: 20px;
+        font-weight: 200;
+
+        margin: 10px 0px;
+      }
+    }
+
+    .work-exp{
+      margin-top: 10px;
+
+      .wkexp-item {
+        font-size: 20px;
+        font-weight: 400;
+
+        margin: 20px 0px;
+      }
+
+      span.wkexp-item-description {
+        font-weight: 100;
+      }
+    }
+
+    .project-exp{
+      .project-exp-item{
+        margin: 20px 0;
+      }
+    }
   }
 }
