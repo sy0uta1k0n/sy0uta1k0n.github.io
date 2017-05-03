@@ -1,8 +1,4 @@
 #app{
-  max-width: 750px;
-  text-align: center;
-  margin: auto;
-
   div{
     max-width: 750px;
     text-align: center;
@@ -22,9 +18,12 @@
   }
 
   header{
+    width: 100%;
+
     position: fixed;
-    width: 750px;
     background-color: white;
+
+    border: 1px solid #999999;
     z-index: 999;
   }
 
@@ -53,7 +52,7 @@
 
   .body-info{
     position: absolute;
-    padding-top: 300px;
+    padding-top: 100px;
 
     h2{
       font-size: 28px;
