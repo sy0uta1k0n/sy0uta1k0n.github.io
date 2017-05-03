@@ -34,7 +34,7 @@ module.exports = {
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
-                loader: 'file-loader'
+                loader: 'url-loader?name=../../assets/[name].[ext]'
             },
             {
                 test: /\.js$/,
@@ -43,7 +43,7 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|gif|svg)$/,
-                loader: 'file-loader',
+                loader: 'url-loader?name=../../assets/[name].[ext]',
             },
             {
                 test: /vux.src.*?js$/,
