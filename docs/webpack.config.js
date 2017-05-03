@@ -44,7 +44,7 @@ module.exports = {
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
-                loader: 'url-loader?name=./fonts/[name].[md5:hash:hex:7].[ext]'
+                loader: 'file-loader'
             },
             {
                 test: /\.js$/,
@@ -53,7 +53,7 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|gif|svg)$/,
-                loader: 'url-loader?name=./fonts/[name].[md5:hash:hex:7].[ext]',
+                loader: 'file-loader',
             },
             {
                 test: /vux.src.*?js$/,

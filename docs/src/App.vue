@@ -138,6 +138,6 @@
 </template>
 
 <style>
-    @import './css/reset.css'
-    @import './css/iconfont.css'
+    @import './css/reset.css';
+    @import './css/iconfont.css';
 </style>
