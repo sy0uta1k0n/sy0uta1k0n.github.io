@@ -65,11 +65,24 @@
     }
 
     .education {
-      span, .education-title{
-        font-size: 22px;
-        font-weight: 200;
+      width: 750px;
+      margin: auto;
 
-        margin: auto;
+      .education-title, .education-major{
+        font-size: 22px;
+        font-weight: 400;
+
+        width: 750px;
+        text-align: left;
+
+        .education-title-school{
+          margin:10px 20px;
+        }
+      }
+
+      .education-major{
+        font-size: 20px;
+        font-weight: 200;
       }
 
       span{
@@ -113,11 +126,17 @@
 
         max-width: 750px;
 
-        .wkexp-item-title, .wkexp-item-company, .wkexp-item-company-type{
+        .wkexp-item-title{
           margin: 5px 0px;
         }
 
+        .wkexp-item-company, .wkexp-item-company-type{
+          font-size: 20px;
+          font-weight: 400;
+        }
+
         .wkexp-item-description{
+          margin: 10px 0px;
           font-size: 20px;
           font-weight: 200;
         }
@@ -126,15 +145,11 @@
           margin: 0px 20px;
         }
       }
-
-      span.wkexp-item-description {
-        font-weight: 200;
-      }
     }
 
     .project-exp{
       .project-exp-item{
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 400;
 
         margin: 20px auto;
@@ -142,8 +157,15 @@
 
         max-width: 750px;
 
+        .project-exp-item-project{
+          margin:0px 20px;
+        }
+
         .project-exp-item-description{
-          font-weight: 100;
+          margin:10px 0px;
+
+          font-size: 20px;
+          font-weight: 200;
         }
       }
     }

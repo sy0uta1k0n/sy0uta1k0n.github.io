@@ -38,12 +38,21 @@
     #app .body-info h2 {
       font-size: 28px;
       font-weight: 400; }
-    #app .body-info .education span, #app .body-info .education .education-title {
-      font-size: 22px;
-      font-weight: 200;
+    #app .body-info .education {
+      width: 750px;
       margin: auto; }
-    #app .body-info .education span {
-      margin: 10px 0; }
+      #app .body-info .education .education-title, #app .body-info .education .education-major {
+        font-size: 22px;
+        font-weight: 400;
+        width: 750px;
+        text-align: left; }
+        #app .body-info .education .education-title .education-title-school, #app .body-info .education .education-major .education-title-school {
+          margin: 10px 20px; }
+      #app .body-info .education .education-major {
+        font-size: 20px;
+        font-weight: 200; }
+      #app .body-info .education span {
+        margin: 10px 0; }
     #app .body-info .technology {
       margin-top: 10px; }
       #app .body-info .technology .tec-title {
@@ -65,23 +74,29 @@
         margin: 20px auto;
         text-align: left;
         max-width: 750px; }
-        #app .body-info .work-exp .wkexp-item .wkexp-item-title, #app .body-info .work-exp .wkexp-item .wkexp-item-company, #app .body-info .work-exp .wkexp-item .wkexp-item-company-type {
+        #app .body-info .work-exp .wkexp-item .wkexp-item-title {
           margin: 5px 0px; }
+        #app .body-info .work-exp .wkexp-item .wkexp-item-company, #app .body-info .work-exp .wkexp-item .wkexp-item-company-type {
+          font-size: 20px;
+          font-weight: 400; }
         #app .body-info .work-exp .wkexp-item .wkexp-item-description {
+          margin: 10px 0px;
           font-size: 20px;
           font-weight: 200; }
         #app .body-info .work-exp .wkexp-item .wkexp-item-project em {
           margin: 0px 20px; }
-      #app .body-info .work-exp span.wkexp-item-description {
-        font-weight: 200; }
     #app .body-info .project-exp .project-exp-item {
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 400;
       margin: 20px auto;
       text-align: left;
       max-width: 750px; }
+      #app .body-info .project-exp .project-exp-item .project-exp-item-project {
+        margin: 0px 20px; }
       #app .body-info .project-exp .project-exp-item .project-exp-item-description {
-        font-weight: 100; }
+        margin: 10px 0px;
+        font-size: 20px;
+        font-weight: 200; }
     #app .body-info .self .self-item {
       max-width: 750px;
       text-align: center;

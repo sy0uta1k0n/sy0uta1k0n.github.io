@@ -46,7 +46,7 @@
                     <span class="education-title-time">2007/9-2011/9</span>
                     <span class="education-title-school">同济大学</span>
                 </div>
-                <span>本科|软件工程</span>
+                <span class="education-major">本科|软件工程</span>
             </div>
             <div class="technology">
                 <h2>个人技术</h2>
