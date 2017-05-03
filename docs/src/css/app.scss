@@ -107,6 +107,7 @@
       .tec-item{
         max-width: 750px;
 
+        color: #999;
         font-size: 20px;
         font-weight: 200;
 
@@ -139,6 +140,7 @@
           margin: 10px 0px;
           font-size: 20px;
           font-weight: 200;
+          color: #999;
         }
 
         .wkexp-item-project em{
@@ -166,6 +168,13 @@
 
           font-size: 20px;
           font-weight: 200;
+
+          em{
+            font-size: 18px;
+            font-weight: 100;
+            line-height: 2;
+            color: #999;
+          }
         }
       }
     }
@@ -183,6 +192,7 @@
           margin: 20px auto;
           text-align: left;
 
+          color: #999;
           font-size: 20px;
           font-weight: 200;
         }

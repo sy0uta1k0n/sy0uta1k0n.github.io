@@ -6,10 +6,6 @@
                 <div class="header-info display-flex-col">
                     <div class="display-flex-row">
                         <div class="header-info-item display-flex-row">
-                            <i class="iconfont icon-addressbook"></i>
-                            <span class="personal-info gender">男</span>
-                        </div>
-                        <div class="header-info-item display-flex-row">
                             <i class="iconfont icon-accessory"></i>
                             <span class="personal-info age">28</span>
                         </div>
@@ -36,6 +32,8 @@
                             <span class="personal-info email">zhuhuahao@gmail.com</span>
                         </div>
                     </div>
+                    <div class="display-flex-row"></div>
+
                 </div>
             </div>
         </header>
@@ -57,7 +55,7 @@
                             <li class="tec-item">熟悉Chrome，Firebug，Postman，Fiddle各种调试工具</li>
                             <li class="tec-item">熟悉原生Java Script， 原型， 作用域，闭包，事件，DOM，BOM, aJax等基础概念</li>
                             <li class="tec-item">熟悉jQuery，jQuery UI，jQuery Mobile UI等库</li>
-                            <li class="tec-item">了解主流MVVM框架VueJS</li>
+                            <li class="tec-item">了解主流MVVM框架Vue.js</li>
                             <li class="tec-item">了解各个浏览器兼容性调试</li>
                             <li class="tec-item">熟悉GIT， SVN等版本控制工具</li>
                             <li class="tec-item">熟悉Webpack， Gulp等打包工具</li>
@@ -112,11 +110,16 @@
                     <span class="project-exp-item-company">广联达软件股份有限公司</span>
                     <div class="project-exp-item-description">
                         <ul>
-                            <li>Portal页面维护和价格页实现（jQuery+Mustache）</li>
-                            <li>新手引导模块（jQuery）</li>
-                            <li>申请试用模块手机端（Vue）</li>
-                            <li>邀请成员模块手机端（jQuery）</li>
-                            <li>问题模块手机端（Vue+VueX+VueRouter）</li>
+                            <li>Portal页面维护和价格页实现（jQuery+Mustache）.</br>
+                                <em>通过实现这个模块,了解到jQuery如何操作DOM,如何添加事件,以及如何与后端产生交互</em></li>
+                            <li>新手引导模块（jQuery）.</br>
+                                <em>通过实现这个模块,了解到元素定位的一些基础实现</em></li>
+                            <li>申请试用模块手机端（Vue）.</br>
+                                <em>通过实现这个模块,了解到Vue的响应式数据绑定和组件,和Flex布局方式</em></li>
+                            <li>邀请成员模块手机端（jQuery）.</br>
+                                <em>通过实现这个模块,了解到aJax底层实现</em></li>
+                            <li>问题模块手机端（Vue+VueX+VueRouter）.</br>
+                                <em>通过参与实现这个模块,了解到Vue的状态管理以及路由的机制</em></li>
                         </ul>
                     </div>
                 </div>
@@ -128,9 +131,9 @@
                     <span class="project-exp-item-company">广联达软件股份有限公司</span>
                     <div class="project-exp-item-description">
                         <ul>
-                            <li>担任功能测试, 负责每个迭代的功能质量保证</li>
-                            <li>担任性能测试, 负责新版接口性能测试并给出结论</li>
-                            <li>担任接口测试, 负责将对外提供的接口自动化并实时监控</li>
+                            <li><em>担任功能测试, 负责每个迭代的功能质量保证</em></li>
+                            <li><em>担任性能测试, 负责新版接口性能测试并给出结论</em></li>
+                            <li><em>担任接口测试, 负责将对外提供的接口自动化并实时监控</em></li>
                         </ul>
                     </div>
                 </div>
