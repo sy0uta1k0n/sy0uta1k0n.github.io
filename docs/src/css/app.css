@@ -1,7 +1,12 @@
 #app {
   max-width: 750px;
-  text-align: left;
+  text-align: center;
+  margin: auto;
   color: #333333; }
+  #app div {
+    max-width: 750px;
+    text-align: center;
+    margin: auto; }
   #app .display-flex-col {
     display: flex;
     flex-direction: column; }
@@ -10,7 +15,7 @@
     flex-direction: row; }
   #app header {
     position: fixed;
-    width: 100%;
+    width: 750px;
     background-color: white;
     z-index: 999; }
   #app .header h1 {
@@ -19,6 +24,8 @@
   #app .header .header-info {
     font-size: 20px;
     font-weight: 200; }
+    #app .header .header-info .display-flex-row {
+      justify-content: space-around; }
   #app .header .header-info-item {
     margin: 8px 0;
     height: 20px;

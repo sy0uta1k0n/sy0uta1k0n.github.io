@@ -1,7 +1,13 @@
 #app{
   max-width: 750px;
-  text-align: left;
+  text-align: center;
+  margin: auto;
 
+  div{
+    max-width: 750px;
+    text-align: center;
+    margin: auto;
+  }
 
   color: #333333;
 
@@ -17,7 +23,7 @@
 
   header{
     position: fixed;
-    width: 100%;
+    width: 750px;
     background-color: white;
     z-index: 999;
   }
@@ -31,6 +37,10 @@
     .header-info{
       font-size: 20px;
       font-weight: 200;
+
+      .display-flex-row{
+        justify-content: space-around;
+      }
     }
 
     .header-info-item {

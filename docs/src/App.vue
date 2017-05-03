@@ -4,33 +4,37 @@
             <div class="header display-flex-col">
                 <h1>朱华浩(Zhu, Hua-Hao)</h1>
                 <div class="header-info display-flex-col">
-                    <div class="header-info-item display-flex-row">
-                        <i class="iconfont icon-homepage"></i>
-                        <span class="personal-info status">正在寻找前端工作</span>
+                    <div class="display-flex-row">
+                        <div class="header-info-item display-flex-row">
+                            <i class="iconfont icon-addressbook"></i>
+                            <span class="personal-info gender">男</span>
+                        </div>
+                        <div class="header-info-item display-flex-row">
+                            <i class="iconfont icon-accessory"></i>
+                            <span class="personal-info age">28</span>
+                        </div>
+                        <div class="header-info-item display-flex-row">
+                            <i class="iconfont icon-stealth"></i>
+                            <span class="personal-info wk-exp">6年工作经验(1年前端)</span>
+                        </div>
+                        <div class="header-info-item display-flex-row">
+                            <i class="iconfont icon-coordinates"></i>
+                            <span class="personal-info living">上海-浦东新区</span>
+                        </div>
                     </div>
-                    <div class="header-info-item display-flex-row">
-                        <i class="iconfont icon-addressbook"></i>
-                        <span class="personal-info gender">男</span>
-                    </div>
-                    <div class="header-info-item display-flex-row">
-                        <i class="iconfont icon-accessory"></i>
-                        <span class="personal-info age">28</span>
-                    </div>
-                    <div class="header-info-item display-flex-row">
-                        <i class="iconfont icon-coordinates"></i>
-                        <span class="personal-info living">上海-浦东新区</span>
-                    </div>
-                    <div class="header-info-item display-flex-row">
-                        <i class="iconfont icon-stealth"></i>
-                        <span class="personal-info wk-exp">6年工作经验(1年前端)</span>
-                    </div>
-                    <div class="header-info-item display-flex-row">
-                        <i class="iconfont icon-mobilephone"></i>
-                        <span class="personal-info phone">13818813680</span>
-                    </div>
-                    <div class="header-info-item display-flex-row">
-                        <i class="iconfont icon-mail"></i>
-                        <span class="personal-info email">zhuhuahao@gmail.com</span>
+                    <div class="display-flex-row">
+                        <div class="header-info-item display-flex-row">
+                            <i class="iconfont icon-homepage"></i>
+                            <span class="personal-info status">正在寻找前端工作</span>
+                        </div>
+                        <div class="header-info-item display-flex-row">
+                            <i class="iconfont icon-mobilephone"></i>
+                            <span class="personal-info phone">13818813680</span>
+                        </div>
+                        <div class="header-info-item display-flex-row">
+                            <i class="iconfont icon-mail"></i>
+                            <span class="personal-info email">zhuhuahao@gmail.com</span>
+                        </div>
                     </div>
                 </div>
             </div>
