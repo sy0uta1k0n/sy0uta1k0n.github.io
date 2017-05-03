@@ -1,0 +1,30 @@
+#app{
+  max-width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+
+  .header{
+    display: flex;
+    flex-direction: column;
+
+    h1{
+      font-size: 26px;
+    }
+
+    .header-info{
+      display: flex;
+      flex-direction: column;
+
+      .header-info-item{
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+
+  .body-info{
+    display: flex;
+    flex-direction: column;
+  }
+}

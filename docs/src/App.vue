@@ -1,21 +1,43 @@
 <template xmlns="http://www.w3.org/1999/html">
     <div id="app">
         <header>
-            <div class="header-info">
+            <div class="header">
                 <h1>朱华浩(Zhu, Hua-Hao)</h1>
-                <div>
-                    <span class="personal-info status">正在寻找前端工作</span>
-                    <span class="personal-info gender">男</span>
-                    <span class="personal-info age">28</span>
-                    <span class="personal-info living">上海-浦东新区</span>
-                    <span class="personal-info wk-exp">6年工作经验(1年前端)</span>
-                    <span class="personal-info phone">13818813680</span>
-                    <span class="personal-info email">zhuhuahao@gmail.com</span>
+                <div class="header-info">
+                    <div class="header-info-item">
+                        <i class="iconfont icon-stealth"></i>
+                        <span class="personal-info status">正在寻找前端工作</span>
+                    </div>
+                    <div class="header-info-item">
+                        <i class="iconfont icon-accessory"></i>
+                        <span class="personal-info gender">男</span>
+                    </div>
+                    <div class="header-info-item">
+                        <i class="iconfont icon-coordinates"></i>
+                        <span class="personal-info age">28</span>
+                    </div>
+                    <div class="header-info-item">
+                        <i class="iconfont icon-homepage"></i>
+                        <span class="personal-info living">上海-浦东新区</span>
+                    </div>
+                    <div class="header-info-item">
+                        <i class="iconfont icon-addressbook"></i>
+                        <span class="personal-info wk-exp">6年工作经验(1年前端)</span>
+                    </div>
+                    <div class="header-info-item">
+                        <i class="iconfont icon-mobilephone"></i>
+                        <span class="personal-info phone">13818813680</span>
+                    </div>
+                    <div class="header-info-item">
+                        <i class="iconfont icon-mail"></i>
+                        <span class="personal-info email">zhuhuahao@gmail.com</span>
+                    </div>
                 </div>
             </div>
         </header>
         <div class="body-info">
             <div class="technology">
+                <h2>个人技术</h2>
                 <ul>
                     <li class="tec-title">前端
                         <ul>
@@ -36,6 +58,7 @@
                 </ul>
             </div>
             <div class="work-exp">
+                <h2>工作经验</h2>
                 <div class="wkexp-item">
                     <div class="wkexp-item-title">
                         <span class="wkexp-item-time">2016/5-至今</span>
@@ -65,6 +88,7 @@
                 </div>
             </div>
             <div class="project-exp">
+                <h2>项目经验</h2>
                 <div class="project-exp-item">
                     <div class="project-exp-item-title">
                         <span class="project-exp-item-time">2016/5-至今</span>
@@ -105,6 +129,7 @@
                 <span>本科|软件工程</span>
             </div>
             <div class="self">
+                <h2>自我评价</h2>
                 <p>	性格乐观向上, 为人和善, 对生活持积极态度.</br>
                     工作认真负责, 学习能力出众, 能迅速接受企业文化.</p>
             </div>
@@ -112,13 +137,7 @@
     </div>
 </template>
 
-<script>
-    export default {
-        name: 'app',
-        data () {
-            return {
-                msg: 'Welcome to Your Vue.js App'
-            }
-        }
-    }
-</script>
+<style>
+    @import './css/reset.css'
+    @import './css/iconfont.css'
+</style>
