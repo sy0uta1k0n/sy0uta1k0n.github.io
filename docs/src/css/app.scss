@@ -35,19 +35,19 @@
       font-size: 20px;
       font-weight: 200;
 
-      width: 750px;
+      width: 780px;
       margin: 10px auto;
 
-      .display-flex-row{
-        justify-content: space-around;
-      }
     }
 
     .header-info-item {
+      width: 260px;
       margin: 8px 0;
 
       height: 20px;
       line-height: 20px;
+
+      text-align: left;
     }
   }
 
@@ -174,6 +174,10 @@
             font-weight: 100;
             line-height: 2;
             color: #999;
+          }
+
+          li{
+            margin-top: 15px;
           }
         }
       }
