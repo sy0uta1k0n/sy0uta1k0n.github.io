@@ -1,10 +1,4 @@
 #app{
-  div{
-    max-width: 750px;
-    text-align: center;
-    margin: auto;
-  }
-
   color: #333333;
 
   .display-flex-col{
@@ -23,7 +17,11 @@
     position: fixed;
     background-color: white;
 
-    border: 1px solid #999999;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+
+    border-bottom: 1px solid #e7e7e7;
     z-index: 999;
   }
 
@@ -36,6 +34,9 @@
     .header-info{
       font-size: 20px;
       font-weight: 200;
+
+      width: 750px;
+      margin: 10px auto;
 
       .display-flex-row{
         justify-content: space-around;
@@ -52,7 +53,11 @@
 
   .body-info{
     position: absolute;
-    padding-top: 100px;
+    padding:155px 0px 100px 0px;
+
+    margin: auto;
+    text-align: center;
+    width: 100%;
 
     h2{
       font-size: 28px;
@@ -63,6 +68,8 @@
       span, .education-title{
         font-size: 22px;
         font-weight: 200;
+
+        margin: auto;
       }
 
       span{
@@ -73,18 +80,24 @@
     .technology{
       margin-top: 10px;
 
-      .technology .tec-title{
+
+      .tec-title{
+        max-width: 750px;
+
+        text-align: left;
+        margin: auto;
+
         font-size: 26px;
         font-weight: 400;
-
-        margin: 40px 0px;
       }
 
-      .technology .tec-item{
+      .tec-item{
+        max-width: 750px;
+
         font-size: 20px;
         font-weight: 200;
 
-        margin: 10px 0px;
+        margin: 10px auto;
       }
     }
 
@@ -92,20 +105,65 @@
       margin-top: 10px;
 
       .wkexp-item {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 400;
 
-        margin: 20px 0px;
+        margin: 20px auto;
+        text-align: left;
+
+        max-width: 750px;
+
+        .wkexp-item-title, .wkexp-item-company, .wkexp-item-company-type{
+          margin: 5px 0px;
+        }
+
+        .wkexp-item-description{
+          font-size: 20px;
+          font-weight: 200;
+        }
+
+        .wkexp-item-project em{
+          margin: 0px 20px;
+        }
       }
 
       span.wkexp-item-description {
-        font-weight: 100;
+        font-weight: 200;
       }
     }
 
     .project-exp{
       .project-exp-item{
-        margin: 20px 0;
+        font-size: 20px;
+        font-weight: 400;
+
+        margin: 20px auto;
+        text-align: left;
+
+        max-width: 750px;
+
+        .project-exp-item-description{
+          font-weight: 100;
+        }
+      }
+    }
+
+    .self {
+      .self-item {
+        max-width: 750px;
+
+        text-align: center;
+        margin: auto;
+
+        .self-item-description{
+          width: 750px;
+
+          margin: 20px auto;
+          text-align: left;
+
+          font-size: 20px;
+          font-weight: 200;
+        }
       }
     }
   }

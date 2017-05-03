@@ -53,9 +53,12 @@
                 <ul>
                     <li class="tec-title">前端
                         <ul>
-                            <li class="tec-item">熟悉HTML/HTML5， CSS 2.X/CSS 3.X 各个浏览器兼容性调试，以及Chrome，Firebug，Postman，Fiddle各种调试工具</li>
-                            <li class="tec-item">熟悉原生Java Script， 原型， 作用域，闭包，事件，DOM，BOM, aJax等基础概念，以及jQuery，jQuery UI，jQuery Mobile UI等库</li>
-                            <li class="tec-item">熟悉主流MVVM框架VueJS，了解React</li>
+                            <li class="tec-item">熟悉HTML/HTML5， CSS 2.X/CSS 3.X</li>
+                            <li class="tec-item">熟悉Chrome，Firebug，Postman，Fiddle各种调试工具</li>
+                            <li class="tec-item">熟悉原生Java Script， 原型， 作用域，闭包，事件，DOM，BOM, aJax等基础概念</li>
+                            <li class="tec-item">熟悉jQuery，jQuery UI，jQuery Mobile UI等库</li>
+                            <li class="tec-item">了解主流MVVM框架VueJS</li>
+                            <li class="tec-item">了解各个浏览器兼容性调试</li>
                             <li class="tec-item">熟悉GIT， SVN等版本控制工具</li>
                             <li class="tec-item">熟悉Webpack， Gulp等打包工具</li>
                         </ul>
@@ -133,9 +136,13 @@
                 </div>
             </div>
             <div class="self display-flex-col">
-                <h2>自我评价</h2>
-                <p>	性格乐观向上, 为人和善, 对生活持积极态度.</br>
-                    工作认真负责, 学习能力出众, 能迅速接受企业文化.</p>
+                <div class="self-item">
+                    <h2>自我评价</h2>
+                    <div class="self-item-description">
+                        <p>性格乐观向上, 为人和善, 对生活持积极态度.</p>
+                        <p>工作认真负责, 学习能力出众, 能迅速接受企业文化.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
