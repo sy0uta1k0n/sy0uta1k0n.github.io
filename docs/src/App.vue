@@ -51,7 +51,7 @@
                         <ul>
                             <li class="tec-item">熟悉HTML/HTML5， CSS 2.X/CSS 3.X</li>
                             <li class="tec-item">熟悉Chrome，Firebug，Postman，Fiddle各种调试工具</li>
-                            <li class="tec-item">熟悉原生Java Script， 原型， 作用域，闭包，事件，DOM，BOM, aJax等基础概念</li>
+                            <li class="tec-item">熟悉原生JavaScript， 原型， 作用域，闭包，事件，DOM，BOM, AJAX等基础概念</li>
                             <li class="tec-item">熟悉jQuery，jQuery UI，jQuery Mobile UI等库</li>
                             <li class="tec-item">了解主流MVVM框架Vue.js</li>
                             <li class="tec-item">了解各个浏览器兼容性调试</li>
@@ -116,7 +116,7 @@
                             </li>
                             <li>新手引导模块（jQuery）.</br>
                                 <em>新手引导模块是新用户在进入文件预览时,给予用户的示例操作.</br>
-                                    这个模块在实现过程中需要控制设计提供的整图的位移(background-position),以及图片中"下一步"的click事件,最后还有发送给后端的ajax请求.
+                                    这个模块在实现过程中需要控制设计提供的整图的位移(background-position),以及图片中"下一步"的click事件,最后还有发送给后端的AJAX请求.
                                 </em>
                             </li>
                             <li>申请试用模块手机端（Vue）.</br>
