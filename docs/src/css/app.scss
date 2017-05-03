@@ -26,34 +26,36 @@
   }
 
   .header{
+    width: 750px;
+    margin: auto;
+    text-align: left;
+
     h1{
       font-size: 30px;
       font-weight: 600;
     }
 
     .header-info{
-      font-size: 20px;
+      font-size: 15px;
       font-weight: 200;
 
-      width: 780px;
+      width: 760px;
       margin: 10px auto;
 
     }
 
     .header-info-item {
-      width: 260px;
+      width: 190px;
       margin: 8px 0;
 
       height: 20px;
       line-height: 20px;
-
-      text-align: left;
     }
   }
 
   .body-info{
     position: absolute;
-    padding:155px 0px 100px 0px;
+    padding:110px 0px 100px 0px;
 
     margin: auto;
     text-align: center;
@@ -72,7 +74,6 @@
         font-size: 22px;
         font-weight: 400;
 
-        width: 750px;
         text-align: left;
 
         .education-title-school{
@@ -91,8 +92,14 @@
     }
 
     .technology{
-      margin-top: 10px;
+      width: 750px;
+      margin: 30px auto;
+      text-align: left;
 
+
+      ul{
+        margin-top: 20px;
+      }
 
       .tec-title{
         max-width: 750px;
@@ -108,7 +115,7 @@
         max-width: 750px;
 
         color: #999;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 200;
 
         margin: 10px auto;
@@ -116,7 +123,9 @@
     }
 
     .work-exp{
-      margin-top: 10px;
+      width: 750px;
+      margin: 30px auto;
+      text-align: left;
 
       .wkexp-item {
         font-size: 22px;
@@ -126,6 +135,8 @@
         text-align: left;
 
         max-width: 750px;
+
+        line-height: 30px;
 
         .wkexp-item-title{
           margin: 5px 0px;
@@ -138,7 +149,7 @@
 
         .wkexp-item-description{
           margin: 10px 0px;
-          font-size: 20px;
+          font-size: 18px;
           font-weight: 200;
           color: #999;
         }
@@ -150,6 +161,10 @@
     }
 
     .project-exp{
+      width: 750px;
+      margin: 30px auto;
+      text-align: left;
+
       .project-exp-item{
         font-size: 22px;
         font-weight: 400;
@@ -179,26 +194,6 @@
           li{
             margin-top: 15px;
           }
-        }
-      }
-    }
-
-    .self {
-      .self-item {
-        max-width: 750px;
-
-        text-align: center;
-        margin: auto;
-
-        .self-item-description{
-          width: 750px;
-
-          margin: 20px auto;
-          text-align: left;
-
-          color: #999;
-          font-size: 20px;
-          font-weight: 200;
         }
       }
     }

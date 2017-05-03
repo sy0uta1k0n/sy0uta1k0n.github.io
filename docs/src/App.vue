@@ -6,22 +6,12 @@
                 <div class="header-info display-flex-col">
                     <div class="display-flex-row">
                         <div class="header-info-item">
-                            <i class="iconfont icon-accessory"></i>
-                            <span class="personal-info age">28</span>
-                        </div>
-                        <div class="header-info-item">
                             <i class="iconfont icon-stealth"></i>
                             <span class="personal-info wk-exp">6年工作经验(1年前端)</span>
                         </div>
                         <div class="header-info-item">
                             <i class="iconfont icon-coordinates"></i>
                             <span class="personal-info living">上海-浦东新区</span>
-                        </div>
-                    </div>
-                    <div class="display-flex-row">
-                        <div class="header-info-item">
-                            <i class="iconfont icon-homepage"></i>
-                            <span class="personal-info status">正在寻找前端工作</span>
                         </div>
                         <div class="header-info-item">
                             <i class="iconfont icon-mobilephone"></i>
@@ -37,17 +27,16 @@
         </header>
         <div class="body-info display-flex-col">
             <div class="education display-flex-col">
-                <h2>教育经历</h2>
                 <div class="education-title display-flex-row">
                     <span class="education-title-time">2007/9-2011/9</span>
                     <span class="education-title-school">同济大学</span>
+                    <span class="education-major">本科|软件工程</span>
                 </div>
-                <span class="education-major">本科|软件工程</span>
             </div>
             <div class="technology">
                 <h2>个人技术</h2>
                 <ul>
-                    <li class="tec-title">前端
+                    <li class="tec-title">1. 前端
                         <ul>
                             <li class="tec-item">熟悉HTML/HTML5， CSS 2.X/CSS 3.X</li>
                             <li class="tec-item">熟悉Chrome，Firebug，Postman，Fiddle各种调试工具</li>
@@ -59,7 +48,7 @@
                             <li class="tec-item">熟悉Webpack， Gulp等打包工具</li>
                         </ul>
                     </li>
-                    <li class="tec-title">测试
+                    <li class="tec-title">2. 测试
                         <ul>
                             <li class="tec-item">熟悉Selenium页面自动化测试框架</li>
                             <li class="tec-item">熟悉QTP, Loadrunner等自动化测试工具</li>
@@ -145,15 +134,6 @@
                             <li><em>担任性能测试, 负责新版接口性能测试并给出结论</em></li>
                             <li><em>担任接口测试, 负责将对外提供的接口自动化并实时监控</em></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="self display-flex-col">
-                <div class="self-item">
-                    <h2>自我评价</h2>
-                    <div class="self-item-description">
-                        <p>性格乐观向上, 为人和善, 对生活持积极态度.</p>
-                        <p>工作认真负责, 学习能力出众, 能迅速接受企业文化.</p>
                     </div>
                 </div>
             </div>
