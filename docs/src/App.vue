@@ -5,22 +5,22 @@
                 <h1>朱华浩(Zhu, Hua-Hao)</h1>
                 <div class="header-info display-flex-col">
                     <div class="display-flex-row">
-                        <div class="header-info-item">
+                        <p class="header-info-item navbar-text">
                             <i class="iconfont icon-stealth"></i>
                             <span class="personal-info wk-exp">6年工作经验(1年前端)</span>
-                        </div>
-                        <div class="header-info-item">
+                        </p>
+                        <p class="header-info-item">
                             <i class="iconfont icon-coordinates"></i>
                             <span class="personal-info living">上海-浦东新区</span>
-                        </div>
-                        <div class="header-info-item">
+                        </p>
+                        <p class="header-info-item">
                             <i class="iconfont icon-mobilephone"></i>
                             <span class="personal-info phone">13818813680</span>
-                        </div>
-                        <div class="header-info-item">
+                        </p>
+                        <p class="header-info-item">
                             <i class="iconfont icon-mail"></i>
                             <span class="personal-info email">zhuhuahao@gmail.com</span>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
