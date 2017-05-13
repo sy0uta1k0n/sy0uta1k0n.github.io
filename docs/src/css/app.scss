@@ -36,6 +36,9 @@
         margin: 16px 15px 16px 0px;
         border: 1px solid #dddddd;
 
+        background: url("../../../myself/docs/src/css/avatar.png") no-repeat 0 0;
+        background-size: cover;
+
         -webkit-border-radius:50%;
         -moz-border-radius:50%;
         border-radius:50%;
@@ -81,24 +84,29 @@
       font-size: 22px;
       font-weight: 400;
 
+      margin-bottom: 20px;
+
       color: #7dcbd7;
+    }
+    h3{
+      font-size: 18px;
+      font-weight: 400;
+
+      color: #4b4b4b;
     }
     .technology{
       width: 750px;
-      margin: 30px auto;
+      margin: 40px auto;
       text-align: left;
-
-
-      ul{
-        margin-top: 20px;
-      }
 
       .tec-title{
         max-width: 750px;
 
         text-align: left;
-        margin: auto;
 
+        margin-top: 20px;
+
+        color: #4d4d4d;
         font-size: 17px;
         font-weight: 400;
       }
@@ -108,7 +116,7 @@
 
         max-width: 750px;
 
-        color: #999;
+        color: #898989;
         font-size: 15px;
         font-weight: 200;
         text-indent: 10px;
@@ -118,7 +126,7 @@
     }
     .work-exp{
       width: 750px;
-      margin: 30px auto;
+      margin: 20px auto;
       text-align: left;
 
       .wkexp-item {
@@ -130,62 +138,77 @@
 
         max-width: 750px;
 
-        line-height: 30px;
-
         .wkexp-item-title{
           margin: 5px 0px;
         }
 
         .wkexp-item-company, .wkexp-item-company-type{
-          font-size: 20px;
+          color: #4c4c4c;
+          font-size: 18px;
           font-weight: 400;
+
+          margin-right: 10px;
         }
 
         .wkexp-item-description{
-          margin: 10px 0px;
-          font-size: 18px;
+          line-height: 20px;
+
+          margin-top: 8px;
+
+          color: #4e4e4e;
+          font-size: 15px;
           font-weight: 200;
-          color: #999;
         }
 
-        .wkexp-item-project em{
-          margin: 0px 20px;
+        em{
+          color: #999999;
+          font-size: 14px;
         }
       }
     }
     .project-exp{
       width: 750px;
-      margin: 30px auto;
+      margin: 20px auto;
       text-align: left;
 
       .project-exp-item{
         font-size: 22px;
         font-weight: 400;
-
-        margin: 20px auto;
+        
         text-align: left;
 
         max-width: 750px;
 
-        .project-exp-item-project{
-          margin:0px 20px;
-        }
-
         .project-exp-item-description{
           margin:10px 0px;
 
-          font-size: 20px;
+          font-size: 15px;
           font-weight: 200;
 
           em{
-            font-size: 18px;
             font-weight: 100;
             line-height: 2;
             color: #999;
           }
 
           li{
-            margin-top: 15px;
+            background: url("../../../myself/docs/src/css/line.png") no-repeat 0 0;
+
+            max-width: 750px;
+
+            color: #5b5b5b;
+            text-indent: 10px;
+            font-weight: 400;
+          }
+
+          .pro-item{
+            margin: 10px auto;
+          }
+
+          .pro-exp-yun{
+            height: 20px;
+
+            color: #898989;
           }
         }
       }
