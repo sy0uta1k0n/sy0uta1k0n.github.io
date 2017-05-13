@@ -26,7 +26,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loader: "vue-style-loader!css-loader!sass-loader" // creates style nodes from JS strings
+                loader: "vue-style-loader!css-loader!sass-loader!url-loader" // creates style nodes from JS strings
             },
             {
                 test: /\.css$/,
@@ -34,7 +34,7 @@ module.exports = {
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
-                loader: 'url-loader?name=../../assets/[name].[ext]'
+                loader: 'url-loader'
             },
             {
                 test: /\.js$/,
@@ -42,8 +42,8 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.(png|jpg|gif|svg)$/,
-                loader: 'url-loader?name=../../assets/[name].[ext]',
+                test: /\.(png)$/,
+                loader: 'url-loader'
             },
             {
                 test: /vux.src.*?js$/,

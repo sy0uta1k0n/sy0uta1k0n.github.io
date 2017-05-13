@@ -1,42 +1,44 @@
 <template xmlns="http://www.w3.org/1999/html">
     <div id="app">
         <header>
-            <div class="header display-flex-col">
-                <h1>朱华浩(Zhu, Hua-Hao)</h1>
-                <div class="header-info display-flex-col">
-                    <div class="display-flex-row">
-                        <p class="header-info-item navbar-text">
-                            <i class="iconfont icon-stealth"></i>
-                            <span class="personal-info wk-exp">6年工作经验(1年前端)</span>
-                        </p>
-                        <p class="header-info-item">
-                            <i class="iconfont icon-coordinates"></i>
-                            <span class="personal-info living">上海-浦东新区</span>
-                        </p>
-                        <p class="header-info-item">
-                            <i class="iconfont icon-mobilephone"></i>
-                            <span class="personal-info phone">13818813680</span>
-                        </p>
-                        <p class="header-info-item">
-                            <i class="iconfont icon-mail"></i>
-                            <span class="personal-info email">zhuhuahao@gmail.com</span>
-                        </p>
+            <div class="header-content display-flex-row">
+                <div class="avatar"></div>
+                <div class="avatar-body display-flex-col">
+                    <h1>朱华浩(Zhu, Hua-Hao)</h1>
+                    <div class="header-info display-flex-col">
+                        <div class="display-flex-row">
+                            <p class="header-info-item navbar-text">
+                                <i class="iconfont icon-stealth"></i>
+                                <span class="personal-info school">2011/9 同济大学 本科|软件工程</span>
+                            </p>
+                            <p class="header-info-item navbar-text">
+                                <i class="iconfont icon-stealth"></i>
+                                <span class="personal-info wk-exp">6年工作经验(1年前端)</span>
+                            </p>
+                        </div>
+                        <div class="display-flex-row">
+                            <p class="header-info-item">
+                                <i class="iconfont icon-mobilephone"></i>
+                                <span class="personal-info phone">13818813680</span>
+                            </p>
+                            <p class="header-info-item">
+                                <i class="iconfont icon-mail"></i>
+                                <span class="personal-info email">zhuhuahao@gmail.com</span>
+                            </p>
+                            <p class="header-info-item">
+                                <i class="iconfont icon-coordinates"></i>
+                                <span class="personal-info living">上海-浦东新区</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <div class="body-info display-flex-col">
-            <div class="education display-flex-col">
-                <div class="education-title display-flex-row">
-                    <span class="education-title-time">2007/9-2011/9</span>
-                    <span class="education-title-school">同济大学</span>
-                    <span class="education-major">本科|软件工程</span>
-                </div>
-            </div>
             <div class="technology">
-                <h2>个人技术</h2>
+                <h2>个人技术:</h2>
                 <ul>
-                    <li class="tec-title">1. 前端
+                    <li class="tec-title">前端
                         <ul>
                             <li class="tec-item">熟悉HTML/HTML5， CSS 2.X/CSS 3.X</li>
                             <li class="tec-item">熟悉Chrome，Firebug，Postman，Fiddle各种调试工具</li>
@@ -48,7 +50,7 @@
                             <li class="tec-item">熟悉Webpack， Gulp等打包工具</li>
                         </ul>
                     </li>
-                    <li class="tec-title">2. 测试
+                    <li class="tec-title">测试
                         <ul>
                             <li class="tec-item">熟悉Selenium页面自动化测试框架</li>
                             <li class="tec-item">熟悉QTP, Loadrunner等自动化测试工具</li>
@@ -112,7 +114,7 @@
                                 <em>此模块是新用户通过手机访问申请试用页面地址来提交试用的模块.</br>
                                     这个模块在实现过程中,采用Flex布局,因为是单页应用,因此并未使用Vue的状态管理和路由机制,仅渲染不同的页面模板.</br>
                                     但在完成之后,发现调试过程中忽视了点击input弹出键盘遮挡input的问题,后通过控制元素滚动解决</br>
-                                    </em></li>
+                                </em></li>
                             <li>邀请成员模块手机端（jQuery）.</br>
                                 <em>此模块是用户邀请其他未注册成员后,该成员收到短信点击短链直接操作的模块.</br>
                                     在和后端对接时,发现后端校验验证码需要请求的SignupKey.而我在实现时,直接将返回的流填充img标签获取验证码.后通过发送XMLhttpRequest获取blob填充方式实现</em></li>
