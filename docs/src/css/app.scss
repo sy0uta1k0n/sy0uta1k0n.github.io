@@ -67,12 +67,22 @@
 
           font-size: 15px;
           font-weight: 200;
+          
+          .school, wk-exp{
+            color: #323232;
+          }
+
+          .phone, .email, .living{
+            color: #666666;
+          }
         }
       }
     }
   }
 
   .body-info{
+    background-color: #fafafa;
+
     position: absolute;
     padding:118px 0px 100px 0px;
 
