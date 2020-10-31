@@ -1,88 +1,67 @@
-var path = require('path')
-var webpack = require('webpack')
+const path = require('path');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/main.js',
-    output: {
-        path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist/',
-        filename: 'build.js'
-    },
-    module: {
-        rules: [
-            {
-                test: /\.vue$/,
-                loader: 'vue-loader',
-                options: {
-                    loaders: {
-                        // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
-                        // the "scss" and "sass" values for the lang attribute to the right configs here.
-                        // other preprocessors should work out of the box, no loader config like this necessary.
-                        'scss': 'vue-style-loader!css-loader!sass-loader',
-                        'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
-                    }
-                    // other vue-loader options go here
-                }
-            },
-            {
-                test: /\.scss$/,
-                loader: "vue-style-loader!css-loader!sass-loader!url-loader" // creates style nodes from JS strings
-            },
-            {
-                test: /\.css$/,
-                loader: 'style-loader!css-loader'
-            },
-            {
-                test: /\.(eot|svg|ttf|woff|woff2)$/,
-                loader: 'url-loader'
-            },
-            {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/
-            },
-            {
-                test: /\.(png)$/,
-                loader: 'url-loader'
-            },
-            {
-                test: /vux.src.*?js$/,
-                loader: 'babel'
-            }
-        ]
-    },
-    resolve: {
-        alias: {
-            'vue$': 'vue/dist/vue.esm.js'
+  mode: 'development',
+  entry: './src/ts/index.tsx',
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: 'index.js'
+  },
+  plugins: [
+    new webpack.ProgressPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/template/index.html'
+    }),
+    new MiniCssExtractPlugin({ filename:'main.[chunkhash].css' })
+  ],
+  module: {
+    rules: [{
+      test: /\.(ts|tsx)$/,
+      loader: 'ts-loader',
+      include: [path.resolve(__dirname, 'src')],
+      exclude: [/node_modules/]
+    }, {
+      test: /.(less|css)$/,
+      use: [{
+        loader: MiniCssExtractPlugin.loader
+      }, {
+        loader: "style-loader"
+      }, {
+        loader: "css-loader",
+        options: {
+          sourceMap: true
         }
-    },
-    devServer: {
-        historyApiFallback: true,
-        noInfo: true
-    },
-    performance: {
-        hints: false
-    },
-    devtool: '#eval-source-map'
-}
-
-if (process.env.NODE_ENV === 'production') {
-    module.exports.devtool = '#source-map'
-    // http://vue-loader.vuejs.org/en/workflow/production.html
-    module.exports.plugins = (module.exports.plugins || []).concat([
-        new webpack.DefinePlugin({
-            'process.env': {
-                NODE_ENV: '"production"'
-            }
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            compress: {
-                warnings: false
-            }
-        }),
-        new webpack.LoaderOptionsPlugin({
-            minimize: true
-        })
-    ])
+      }, {
+        loader: "less-loader",
+        options: {
+          sourceMap: true
+        }
+      }]
+    }]
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
+  },
+  optimization: {
+    minimizer: [new TerserPlugin()],
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          priority: -10,
+          test: /[\\/]node_modules[\\/]/
+        }
+      },
+      chunks: 'async',
+      minChunks: 1,
+      minSize: 30000
+    }
+  },
+  devServer: {
+    contentBase: './dist',
+    hot: true
+  }
 }
