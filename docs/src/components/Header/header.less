@@ -1,0 +1,68 @@
+.header-content {
+    display: flex;
+    background-color: white;
+    border-bottom: .01rem solid #7dcbd7;
+
+    width: 100%;
+
+    .avatar {
+        width: .82rem;
+        height: .82rem;
+
+        margin: .2rem .15rem .16rem;
+        border: .01rem solid #DDDDDD;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+
+        border-radius: 50%;
+
+        flex-shrink: 0;
+    }
+
+    .avatar-body {
+        margin: .2rem 0 .1rem;
+
+        .header-username {
+            display: flex;
+            font-size: .24rem;
+            font-family: 'PingFangSC-Semibold';
+
+            margin-bottom: .1rem;
+        }
+
+        .header-info {
+            font-size: .15rem;
+            font-family: 'PingFangSC-Regular';
+        }
+
+        .header-info-item {
+            display: flex;
+            align-items: center;
+
+            margin: .08rem 0;
+
+            font-size: .15rem;
+            font-family: 'PingFangSC-Regular';
+
+            .school, wk-exp {
+                color: #323232;
+            }
+
+            .phone,
+            .email,
+            .living {
+                color: #666666;
+            }
+
+            .email {
+                margin-bottom: .02rem;
+            }
+        }
+
+        .personal-info {
+            margin-left: .05rem;
+        }
+    }
+}

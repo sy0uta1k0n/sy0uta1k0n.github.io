@@ -16,7 +16,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/template/index.html'
     }),
-    new MiniCssExtractPlugin({ filename:'main.[chunkhash].css' })
+    new MiniCssExtractPlugin({ filename:'main.[chunkhash].css' }),
   ],
   module: {
     rules: [{
@@ -27,8 +27,6 @@ module.exports = {
     }, {
       test: /.(less|css)$/,
       use: [{
-        loader: MiniCssExtractPlugin.loader
-      }, {
         loader: "style-loader"
       }, {
         loader: "css-loader",
@@ -39,7 +37,12 @@ module.exports = {
         loader: "less-loader",
         options: {
           sourceMap: true
-        }
+        },
+      }]
+    }, {
+      test: /.(fft|svg|woff|eot|ttf|png)$/,
+      use: [{
+        loader: "url-loader"
       }]
     }]
   },
@@ -61,7 +64,9 @@ module.exports = {
     }
   },
   devServer: {
-    contentBase: './dist',
-    hot: true
+    contentBase: path.join(__dirname, 'dist'),
+    hot: true,
+    open: true,
+    port: 9000
   }
 }

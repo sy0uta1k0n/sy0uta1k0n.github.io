@@ -5,10 +5,14 @@
     "module": "es6",
     "target": "es5",
     "allowJs": true,
+    "moduleResolution": "Node",
     "jsx": "react",
     "lib": [
       "dom",
       "esnext"
+    ],
+    "typeRoots": [
+      "./src/types"
     ]
   },
   "include": [
