@@ -8,14 +8,14 @@ export const personal = {
     skillInfo: {
         title: '技术背景: ',
         list: [
-            '熟悉HTML5, CSS3/Less/Stylus',
-            '熟悉原生Javascript/ES6/TypeScript',
-            '熟悉主流MVVM框架, React',
+            '熟悉HTML5/CSS3/Less/Stylus',
+            '熟悉Javascript/ES6/TypeScript',
+            '熟悉React',
             '熟悉Node/Koa/PM2',
-            '熟悉Webpack/Gulp打包工具',
-            '熟悉Git/Git Flow/StandardVersion交付工具',
+            '熟悉Webpack/Gulp',
+            '熟悉Git/Git Flow/StandardVersion',
             '熟悉Eslint/Tslint',
-            '熟悉Jest单元测试工具'
+            '熟悉Jest'
         ]
     },
     workInfo: {
