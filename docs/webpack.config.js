@@ -8,7 +8,7 @@ module.exports = {
   mode: 'development',
   entry: './src/ts/index.tsx',
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, './'),
     filename: 'index.js'
   },
   plugins: [
