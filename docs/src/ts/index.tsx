@@ -7,6 +7,8 @@ import '../style/iconfont.css'
 
 import { Header } from '../components/Header/header'
 import { Skill } from '../components/Skill/skill'
+import { Work } from '../components/Work/work'
+import { Project } from '../components/Project/project'
 
 class Resume extends React.Component {
   render() {
@@ -14,6 +16,8 @@ class Resume extends React.Component {
       <div className="resume">
         <Header />
         <Skill />
+        <Work />
+        <Project />
       </div>
     )
   }

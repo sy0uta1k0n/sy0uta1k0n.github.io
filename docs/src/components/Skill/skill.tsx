@@ -9,8 +9,8 @@ export class Skill extends React.Component {
     render() {
         const { skillInfo } = personal
         return (
-            <div className="skill-content display-flex-col">
-                <span className="skill-title">{skillInfo.title}</span>
+            <div className="common-content skill-content display-flex-col">
+                <span className="common-title skill-title">{skillInfo.title}</span>
                 <div className="skill-list">
                     {
                         skillInfo.list.map((skill, index) => {

@@ -1,3 +1,9 @@
+.resume {
+    background-color: #fafafa;
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
 .display-flex-col {
     display: flex;
     flex-direction: column;
@@ -6,4 +12,70 @@
 .display-flex-row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.common-content {
+    padding: .15rem 0 0 .15rem;
+}
+
+.common-title {
+    font-size: .22rem;
+    font-family: 'PingFangSC-Semibold';
+    color: #7dcbd7;
+}
+
+.common-list {
+    padding: .14rem .1rem 0;
+}
+
+.common-list-item {
+    display: flex;
+    margin-bottom: .2rem;
+}
+.common-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.common-sub-title, .common-sub-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.common-sub-title {
+    width: 1rem;
+    height: .6rem;
+}
+
+.common-sub-content {
+    flex: 1;
+    margin-left: .2rem;
+}
+
+.common-name {
+    font-size: .18rem;
+    color: #4b4b4b;
+    font-family: 'PingFangSC-Semibold';
+}
+
+.common-time {
+    font-size: .12rem;
+    color: #999999;
+
+    margin-top: .08rem;
+}
+
+.common-description {
+    font-size: .16rem;
+    color: #4c4c4c;
+    font-family: 'PingFangSC-Semibold';
+}
+
+.common-detail {
+    display: flex;
+
+    font-size: .14rem;
+    color: #4e4e4e;
+    line-height: .2rem;
+
+    margin-top: .07rem;
 }
